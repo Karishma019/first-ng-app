@@ -1,0 +1,44 @@
+/* p {
+  margin: 1rem 0;
+  font-size: larger;
+} */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  border: 2px solid #ccc;
+  padding: 5px;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-container.selected {
+  border-color: #007bff;
+}
+
+.counter {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+}

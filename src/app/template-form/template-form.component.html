@@ -1,0 +1,83 @@
+<div class="form-container-1">
+  <form action="#" method="POST" class="form-container">
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input
+        type="text"
+        [(ngModel)]="studentObj.firstName"
+        id="firstname"
+        name="firstname"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input
+        type="text"
+        [(ngModel)]="studentObj.lastName"
+        id="lastname"
+        name="lastname"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        [(ngModel)]="studentObj.userName"
+        id="username"
+        name="username"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input
+        type="text"
+        [(ngModel)]="studentObj.city"
+        id="city"
+        name="city"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="state">State</label>
+      <select [(ngModel)]="studentObj.state" id="state" name="state" required>
+        <option value="">Select a State</option>
+        <option value="NY">New York</option>
+        <option value="CA">California</option>
+        <option value="TX">Texas</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="zip">ZIP Code</label>
+      <input
+        type="text"
+        [(ngModel)]="studentObj.zip"
+        id="zip"
+        name="zip"
+        pattern="\d{5}"
+        title="Please enter a 5-digit ZIP code"
+        required
+      />
+    </div>
+    <div class="form-group checkbox">
+      <input
+        type="checkbox"
+        [(ngModel)]="studentObj.isAcceptedTerm"
+        id="terms"
+        name="terms"
+        required
+      />
+      <label for="terms"
+        >I agree to the
+        <a href="#" target="_blank">terms and conditions</a>.</label
+      >
+    </div>
+
+    <div class="form-actions">
+      <button type="reset" class="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
